@@ -3,7 +3,7 @@ node {
   stage 'Checkout'
 
   // Checkout code from repository
-  checkout scm
+  checkout scm, poll: true
 
   // Get the maven tool. // ** NOTE: This 'M3' maven tool must be configured // ** in the global configuration. 
   def mvnHome = tool 'maven-3.2.5'
