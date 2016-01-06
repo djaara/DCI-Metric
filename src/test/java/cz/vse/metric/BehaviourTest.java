@@ -52,10 +52,10 @@ public class BehaviourTest {
         dciMetric.loadWsdl(WSDL_URL);
         dciMetric.computeMetric();
 
-        assertTrue(dciMetric.getDataCouplingIndex() != 0);
+        assertTrue(dciMetric.getDataCouplingIndex() == 0);
         System.out.println(dciMetric.getDataCouplingIndex());
 
-        assertTrue(dciMetric.getNormalizedDataCouplingIndex() != 0);
+        assertTrue(dciMetric.getNormalizedDataCouplingIndex() == 0);
         System.out.println(dciMetric.getNormalizedDataCouplingIndex());
 
     }
