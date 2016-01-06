@@ -12,4 +12,4 @@ node {
   stage name: 'Build', concurrency: 1
   // Run the maven build 
   sh "${mvnHome}/bin/mvn -B clean install"
-} 
+}
